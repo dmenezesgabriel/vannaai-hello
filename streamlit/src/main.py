@@ -1,13 +1,13 @@
-import streamlit as st
-from vanna.vannadb.vannadb_vector import VannaDB_VectorStore
 from vanna.chromadb.chromadb_vector import ChromaDB_VectorStore
 from vanna.ollama import Ollama
+
+import streamlit as st
 
 
 class MyVanna(ChromaDB_VectorStore, Ollama):
     def __init__(self, config=None):
         Ollama.__init__(self, config=config)
-        vs = ChromaDB_VectorStore.__init__(self, config=config)
+        ChromaDB_VectorStore.__init__(self, config=config)
 
 
 vn = MyVanna(
