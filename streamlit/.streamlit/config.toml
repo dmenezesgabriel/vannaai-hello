@@ -1,0 +1,14 @@
+[server]
+runOnSave = true
+maxUploadSize = 200
+enableStaticServing = false
+
+[browser]
+gatherUsageStats = false
+
+[logger]
+level = "info"
+messageFormat = "%(asctime)s %(levelname)s %(filename)s:%(lineno)d:%(funcName)s %(message)s"
+
+[theme]
+primaryColor = "#F63366"
